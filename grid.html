@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            display: grid;
+            grid-template-rows: 1fr 1fr  1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            /* grid-template-areas:
+                            "1 . ."
+                            "2 . ."
+                            "3 . ."; */
+            width: 800px;
+            height: 600px;
+            margin: 100px auto;
+        }
+        #box div {
+            border: 1px solid #ccc;
+        }
+        .project {
+            /* grid-area: 1 */
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+        }
+        .project1 {
+            /* grid-area: 2 */
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+            
+        }
+        .project2 {
+            /* grid-area: 3 */
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+            
+        }
+        /* grid-auto-columns、grid-auto-rows; grid-auto-flow //如果设置为1x1的网格布局,如果多于一个，则多出的将按这个值来设置宽（grid-auto-columns）、高(grid-auto-rows) */
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="project">121</div>
+        <!-- <div class="projec2t"></div> -->
+        <div class="project1"></div>
+        <div class="project2"></div>
+    </div>
+</body>
+</html>
